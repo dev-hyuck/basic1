@@ -79,4 +79,14 @@ public class MemberService {
         );
     }
 
+    @Transactional
+    public void delete(long membersId) {
+        boolean existence = memberRepository.existsById(membersId);
+
+        if(!existence){
+            throw new IllegalArgumentException(" 없는 멤버입니다.");
+        }
+
+        memberRepository.deleteById(membersId);
+    }
 }
