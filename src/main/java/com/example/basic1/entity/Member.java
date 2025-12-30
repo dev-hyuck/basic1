@@ -10,7 +10,7 @@ import lombok.AccessLevel;
 @Table(name = "users")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 
-public class Member {
+public class Member extends BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id; // 데이터 베이스에서 자동으로 만들어줌
