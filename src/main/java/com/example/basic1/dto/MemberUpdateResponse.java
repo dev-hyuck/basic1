@@ -19,4 +19,5 @@ public class MemberUpdateResponse {
         this.createdAt = createdAt;
         this.modifiedAt = modifiedAt;
     }
+
 }

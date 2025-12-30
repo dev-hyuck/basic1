@@ -8,4 +8,7 @@ public class MemberUpdateRequest {
 
     private Long id;
 
+    public String getName() {
+        return getName();
+    }
 }
