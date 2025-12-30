@@ -20,4 +20,5 @@ public class MemberUpdateResponse {
         this.modifiedAt = modifiedAt;
     }
 
+
 }
